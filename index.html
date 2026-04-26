@@ -397,7 +397,7 @@ body.admin-mode .floating{display:none}
         <h3 data-i18n="book_title">Book a Service</h3>
         <p data-i18n="book_sub">Fill the form — we’ll confirm on WhatsApp instantly</p>
       </div>
-      <form class="form-wrap" id="bookingForm">
+      <form class="form-wrap" id="bookingForm" onsubmit="sendToWhatsApp(event)">
         <div class="form-row">
           <label for="name" data-i18n="f_name">Your Name</label>
           <input type="text" id="name" name="name" required="" placeholder="e.g. Ramesh Kumar">
@@ -569,5 +569,24 @@ body.admin-mode .floating{display:none}
 
 
 
+<script>
+function sendToWhatsApp(e){
+  e.preventDefault();
 
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let address = document.getElementById("address").value;
+  let work = document.getElementById("work").value;
+
+  let message = "New Booking:%0A"
+              + "Name: " + name + "%0A"
+              + "Phone: " + phone + "%0A"
+              + "Address: " + address + "%0A"
+              + "Work: " + work;
+
+  let url = "https://wa.me/919801050312?text=" + message;
+
+  window.open(url, "_blank");
+}
+     </script>
 </body></html>
