@@ -1,0 +1,573 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma ji Carpentry Works | Quality Woodwork Services</title>
+<meta name="description" content="Sharma ji Carpentry Works - Expert carpenter services in Tetahali, Barharia, Siwan. Book online, call or WhatsApp us.">
+
+<!-- =================================================================
+     ★ CONFIGURATION — EDIT THESE VALUES EASILY ★
+     ================================================================= -->
+
+
+<style>
+/* ==========================================================
+   GREEN THEME — Clean, mobile-friendly, no frameworks
+   ========================================================== */
+:root{
+  --green-900:#0f3d2e;
+  --green-700:#1f6f4a;
+  --green-600:#2e8b57;
+  --green-500:#3ca66a;
+  --green-400:#6dbf8e;
+  --green-50:#eaf7ef;
+  --cream:#fbfaf5;
+  --ink:#14241c;
+  --muted:#5a6b62;
+  --line:#e2ece6;
+  --accent:#f4b53f;
+  --shadow:0 6px 24px rgba(15,61,46,.08);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* ---------- HEADER ---------- */
+header{
+  position:sticky;top:0;z-index:100;
+  background:var(--green-700);
+  color:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;max-width:1100px;margin:0 auto;gap:10px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{
+  width:42px;height:42px;border-radius:10px;
+  background:var(--accent);color:var(--green-900);
+  display:grid;place-items:center;font-weight:800;font-size:18px;
+  box-shadow:var(--shadow);
+}
+.brand h1{font-size:1.1rem;line-height:1.1;letter-spacing:.2px}
+.brand span{font-size:.72rem;opacity:.85;display:block;margin-top:2px}
+
+.nav-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.btn{
+  padding:9px 14px;border-radius:999px;font-weight:600;font-size:.9rem;
+  display:inline-flex;align-items:center;gap:6px;transition:transform .15s ease,background .2s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-call{background:var(--accent);color:var(--green-900)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+.btn-lang{background:#fff;color:var(--green-700)}
+.btn-primary{background:var(--green-600);color:#fff}
+.btn-primary:hover{background:var(--green-700)}
+.btn-outline{background:#fff;color:var(--green-700);border:2px solid var(--green-600)}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:linear-gradient(180deg,#e8f4ec 0%,var(--cream) 100%);
+  padding:55px 0 40px;text-align:center;
+}
+.hero h2{
+  font-size:2.1rem;line-height:1.2;color:var(--green-900);
+  max-width:720px;margin:0 auto 14px;
+}
+.hero h2 em{color:var(--green-600);font-style:normal}
+.hero p{color:var(--muted);max-width:600px;margin:0 auto 22px;font-size:1.02rem}
+.hero-cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- SECTION ---------- */
+section{padding:55px 0}
+.section-title{text-align:center;margin-bottom:32px}
+.section-title h3{
+  font-size:1.75rem;color:var(--green-900);
+  display:inline-block;position:relative;padding-bottom:10px;
+}
+.section-title h3::after{
+  content:"";position:absolute;left:50%;bottom:0;
+  width:60px;height:3px;background:var(--accent);transform:translateX(-50%);border-radius:3px;
+}
+.section-title p{color:var(--muted);margin-top:8px}
+
+/* ---------- SERVICES ---------- */
+.grid{display:grid;gap:18px}
+.services-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:22px;box-shadow:var(--shadow);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(15,61,46,.12)}
+.card .icon{
+  width:48px;height:48px;border-radius:12px;
+  background:var(--green-50);color:var(--green-700);
+  display:grid;place-items:center;font-size:22px;margin-bottom:14px;
+}
+.card h4{color:var(--green-900);margin-bottom:6px;font-size:1.05rem}
+.card p{color:var(--muted);font-size:.92rem}
+
+/* ---------- GALLERY ---------- */
+.gallery-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.gallery-item{
+  position:relative;border-radius:14px;overflow:hidden;
+  aspect-ratio:4/3;box-shadow:var(--shadow);
+  transition:transform .25s ease;
+}
+.gallery-item:hover{transform:scale(1.02)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-item .tag{
+  position:absolute;left:10px;bottom:10px;
+  background:rgba(15,61,46,.85);color:#fff;
+  padding:5px 11px;border-radius:20px;font-size:.78rem;font-weight:600;
+}
+
+/* ---------- BOOKING FORM ---------- */
+.form-wrap{
+  max-width:640px;margin:0 auto;background:#fff;
+  padding:28px;border-radius:16px;box-shadow:var(--shadow);
+  border:1px solid var(--line);
+}
+.form-row{margin-bottom:16px}
+label{display:block;margin-bottom:6px;font-weight:600;color:var(--green-900);font-size:.92rem}
+input,textarea{
+  width:100%;padding:12px 14px;border:1.5px solid var(--line);
+  border-radius:10px;font-size:1rem;font-family:inherit;
+  background:#fafdfb;transition:border .2s,background .2s;
+}
+input:focus,textarea:focus{outline:none;border-color:var(--green-500);background:#fff}
+textarea{resize:vertical;min-height:90px}
+.submit-btn{
+  width:100%;padding:14px;background:var(--green-600);color:#fff;
+  font-weight:700;font-size:1.02rem;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:background .2s;
+}
+.submit-btn:hover{background:var(--green-700)}
+.form-note{font-size:.85rem;color:var(--muted);text-align:center;margin-top:10px}
+
+/* ---------- PAYMENT / UPI ---------- */
+.payment-box{
+  max-width:520px;margin:0 auto;background:#fff;padding:28px;
+  border-radius:16px;box-shadow:var(--shadow);text-align:center;
+  border:1px solid var(--line);
+}
+.payment-box .qr{
+  width:200px;height:200px;margin:14px auto;background:var(--green-50);
+  border:2px dashed var(--green-400);border-radius:12px;
+  display:grid;place-items:center;padding:8px;
+}
+.payment-box .qr img{width:100%;height:100%;object-fit:contain}
+.upi-id{
+  display:inline-flex;align-items:center;gap:10px;background:var(--green-50);
+  padding:10px 16px;border-radius:10px;margin-top:10px;
+  font-family:'Courier New',monospace;font-weight:700;color:var(--green-900);
+}
+.copy-btn{
+  background:var(--green-600);color:#fff;padding:4px 10px;border-radius:6px;font-size:.8rem;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.t-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.testimonial{
+  background:#fff;padding:22px;border-radius:14px;
+  border-left:4px solid var(--green-500);box-shadow:var(--shadow);
+}
+.testimonial p{font-style:italic;color:var(--muted);margin-bottom:12px}
+.testimonial .stars{color:var(--accent);margin-bottom:8px;letter-spacing:2px}
+.testimonial .who{font-weight:700;color:var(--green-900);font-size:.95rem}
+.testimonial .where{font-size:.82rem;color:var(--muted)}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.contact-card{background:#fff;padding:22px;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.contact-card h4{color:var(--green-700);margin-bottom:8px;font-size:1rem}
+.contact-card p{color:var(--muted);font-size:.95rem;word-break:break-word}
+
+/* ---------- MAP ---------- */
+.map-wrap{
+  max-width:1000px;margin:0 auto;border-radius:16px;overflow:hidden;
+  box-shadow:var(--shadow);border:1px solid var(--line);
+}
+.map-wrap iframe{width:100%;height:360px;border:0;display:block}
+
+/* ---------- FOOTER ---------- */
+footer{
+  background:var(--green-900);color:#d9eadf;padding:30px 20px 20px;text-align:center;
+}
+footer p{font-size:.9rem;margin-bottom:6px}
+footer a{color:var(--accent)}
+.admin-link{display:inline-block;margin-top:12px;font-size:.85rem;opacity:.8}
+
+/* ---------- FLOATING BUTTONS ---------- */
+.floating{
+  position:fixed;right:16px;bottom:16px;
+  display:flex;flex-direction:column;gap:10px;z-index:90;
+}
+.fab{
+  width:54px;height:54px;border-radius:50%;
+  display:grid;place-items:center;color:#fff;font-size:24px;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+  transition:transform .2s;
+}
+.fab:hover{transform:scale(1.08)}
+.fab.wa{background:#25d366}
+.fab.call{background:var(--green-700)}
+
+/* ---------- ADMIN ---------- */
+.admin-view{display:none;min-height:100vh;background:var(--cream);padding:40px 20px}
+.admin-view.active{display:block}
+.admin-box{
+  max-width:960px;margin:0 auto;background:#fff;
+  border-radius:16px;padding:28px;box-shadow:var(--shadow);border:1px solid var(--line);
+}
+.admin-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:20px;flex-wrap:wrap;gap:12px;
+}
+.admin-header h2{color:var(--green-900)}
+.booking-item{
+  background:var(--green-50);border:1px solid var(--green-400);
+  border-radius:12px;padding:16px;margin-bottom:12px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+.booking-item .info h4{color:var(--green-900);margin-bottom:4px}
+.booking-item .info p{font-size:.92rem;color:var(--ink);margin:2px 0}
+.booking-item .meta{font-size:.8rem;color:var(--muted);margin-top:6px}
+.del-btn{
+  background:#d9534f;color:#fff;padding:8px 14px;border-radius:8px;
+  font-weight:600;font-size:.88rem;height:fit-content;
+}
+.del-btn:hover{background:#b94340}
+.login-box{
+  max-width:380px;margin:80px auto;background:#fff;padding:32px;
+  border-radius:16px;box-shadow:var(--shadow);text-align:center;border:1px solid var(--line);
+}
+.login-box h2{color:var(--green-900);margin-bottom:8px}
+.login-box p{color:var(--muted);margin-bottom:20px;font-size:.92rem}
+.empty{text-align:center;padding:40px;color:var(--muted)}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:600px){
+  .hero h2{font-size:1.6rem}
+  .nav{padding:10px 12px}
+  .brand h1{font-size:.98rem}
+  .btn{padding:7px 11px;font-size:.82rem}
+  section{padding:40px 0}
+  .section-title h3{font-size:1.4rem}
+  .form-wrap,.payment-box{padding:20px}
+}
+
+/* Hide main site when admin view is active */
+body.admin-mode .site{display:none}
+body.admin-mode .floating{display:none}
+</style>
+</head>
+<body>
+
+<!-- ============== MAIN SITE ============== -->
+<div class="site">
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1 data-i18n="brand">Sharma ji Carpentry Works</h1>
+          <span data-i18n="tagline">Quality Woodwork • Trusted Since Years</span>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-lang" id="langBtn">हिंदी</button>
+        <a class="btn btn-call" id="callBtnHeader" href="tel:+919801050312">📞 <span data-i18n="call">Call Now</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2 data-i18n="hero_title">Beautiful <em>custom woodwork</em><br>crafted with care &amp; skill</h2>
+      <p data-i18n="hero_sub">From doors and windows to wardrobes and furniture — we build it all with premium quality wood and honest pricing.</p>
+      <div class="hero-cta">
+        <a href="#booking" class="btn btn-primary" data-i18n="book_now">📝 Book Now</a>
+        <a href="#services" class="btn btn-outline" data-i18n="our_services">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="services_title">Our Services</h3>
+        <p data-i18n="services_sub">Everything wood — done right</p>
+      </div>
+      <div class="grid services-grid">
+        <div class="card">
+          <div class="icon">🚪</div>
+          <h4 data-i18n="s1_t">Doors &amp; Windows</h4>
+          <p data-i18n="s1_d">Custom wooden doors, window frames, and polishing work.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🗄️</div>
+          <h4 data-i18n="s2_t">Wardrobes &amp; Almirahs</h4>
+          <p data-i18n="s2_d">Modular wardrobes, built-in almirahs tailored to your space.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛏️</div>
+          <h4 data-i18n="s3_t">Bed &amp; Furniture</h4>
+          <p data-i18n="s3_d">Beds, sofas, dining tables, chairs — built strong, finished smooth.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🍳</div>
+          <h4 data-i18n="s4_t">Modular Kitchen</h4>
+          <p data-i18n="s4_d">Space-saving kitchen cabinets with premium fittings.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🪚</div>
+          <h4 data-i18n="s5_t">Repair &amp; Polish</h4>
+          <p data-i18n="s5_d">Old furniture repair, polishing, and restoration services.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏠</div>
+          <h4 data-i18n="s6_t">Home Interior</h4>
+          <p data-i18n="s6_d">Complete home woodwork interior and false ceiling services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" style="background:#fff">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="gallery_title">Our Work Gallery</h3>
+        <p data-i18n="gallery_sub">A glimpse of recent projects</p>
+      </div>
+      <!-- ========================================================
+           GALLERY PHOTOS — Real project photos
+           To change: replace the src="..." URLs below with your own
+           image links or use local paths (e.g., src="images/work1.jpg")
+           ======================================================== -->
+      <div class="grid gallery-grid">
+        <div class="gallery-item">
+          <img src="https://customer-assets.emergentagent.com/job_builder-hub-442/artifacts/42gdqpn7_IMG-20260422-WA0007.jpg" alt="Wooden almirah" loading="lazy">
+          <span class="tag" data-i18n="g_tag_almirah">Almirah</span>
+        </div>
+        <div class="gallery-item">
+          <img src="https://customer-assets.emergentagent.com/job_builder-hub-442/artifacts/1hq3991m_IMG-20260422-WA0008.jpg" alt="Loft storage cabinets" loading="lazy">
+          <span class="tag" data-i18n="g_tag_loft">Loft Storage</span>
+        </div>
+        <div class="gallery-item">
+          <img src="https://customer-assets.emergentagent.com/job_builder-hub-442/artifacts/kdmiqu00_IMG-20260422-WA0009.jpg" alt="Designer wall panel" loading="lazy">
+          <span class="tag" data-i18n="g_tag_wall">Wall Panel</span>
+        </div>
+        <div class="gallery-item">
+          <img src="https://customer-assets.emergentagent.com/job_builder-hub-442/artifacts/q4mhbhee_IMG-20260422-WA0006.jpg" alt="Interior woodwork in progress" loading="lazy">
+          <span class="tag" data-i18n="g_tag_interior">Interior Work</span>
+        </div>
+        <div class="gallery-item">
+          <img src="https://customer-assets.emergentagent.com/job_builder-hub-442/artifacts/cwcv9dz2_IMG-20260422-WA0001.jpg" alt="Modular kitchen" loading="lazy">
+          <span class="tag" data-i18n="g_tag_kitchen">Modular Kitchen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="booking">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="book_title">Book a Service</h3>
+        <p data-i18n="book_sub">Fill the form — we’ll confirm on WhatsApp instantly</p>
+      </div>
+      <form class="form-wrap" id="bookingForm">
+        <div class="form-row">
+          <label for="name" data-i18n="f_name">Your Name</label>
+          <input type="text" id="name" name="name" required="" placeholder="e.g. Ramesh Kumar">
+        </div>
+        <div class="form-row">
+          <label for="phone" data-i18n="f_phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required="" pattern="[0-9+\-\s]{7,15}" placeholder="e.g. 9876543210">
+        </div>
+        <div class="form-row">
+          <label for="address" data-i18n="f_addr">Address</label>
+          <input type="text" id="address" name="address" required="" placeholder="House, Village, District">
+        </div>
+        <div class="form-row">
+          <label for="work" data-i18n="f_work">Work Details</label>
+          <textarea id="work" name="work" required="" placeholder="Describe what you need — e.g. 2 doors, one almirah..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" data-i18n="f_submit">📲 Submit &amp; Send to WhatsApp</button>
+        <p class="form-note" data-i18n="f_note">Your details are saved locally &amp; a WhatsApp chat will open automatically.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- PAYMENT -->
+  <section id="payment" style="background:#fff">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="pay_title">UPI Payment</h3>
+        <p data-i18n="pay_sub">Scan the QR or pay to the UPI ID below</p>
+      </div>
+      <div class="payment-box">
+        <h4 style="color:var(--green-900);margin-bottom:4px" data-i18n="pay_scan">Scan to Pay</h4>
+        <p style="font-size:.88rem;color:var(--muted)" data-i18n="pay_via">Works with GPay, PhonePe, Paytm, BHIM</p>
+        <div class="qr">
+          <img id="upiQR" alt="UPI QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=4&amp;data=upi%3A%2F%2Fpay%3Fpa%3D9801050312%2540upi%26pn%3DSharma%2520ji%2520Carpentry%2520Works%26cu%3DINR">
+        </div>
+        <div class="upi-id">
+          <span id="upiIdText">9801050312@upi</span>
+          <button class="copy-btn" data-i18n="copy">Copy</button>
+        </div>
+        <p style="font-size:.85rem;color:var(--muted);margin-top:12px" data-i18n="pay_note">After payment, please share screenshot on WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="t_title">What Clients Say</h3>
+        <p data-i18n="t_sub">Trusted by families across the region</p>
+      </div>
+      <div class="grid t-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t1">"Amazing work on our main door! Finish quality is premium and delivered on time."</p>
+          <div class="who">Rakesh Singh</div>
+          <div class="where">Siwan</div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t2">"Got a full wardrobe made. Fair pricing, neat work. Highly recommended!"</p>
+          <div class="who">Sunita Devi</div>
+          <div class="where">Barharia</div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="t3">"Sharma ji understood exactly what I wanted. Kitchen cabinets look beautiful."</p>
+          <div class="who">Manoj Verma</div>
+          <div class="where">Tetahali</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:#fff">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="c_title">Contact Us</h3>
+        <p data-i18n="c_sub">Available all days, 8 AM – 8 PM</p>
+      </div>
+      <div class="grid contact-grid">
+        <div class="contact-card">
+          <h4 data-i18n="c_call">📞 Call</h4>
+          <p><a id="callLink" href="tel:+919801050312">+91 9801050312</a></p>
+        </div>
+        <div class="contact-card">
+          <h4 data-i18n="c_wa">💬 WhatsApp</h4>
+          <p><a id="waLink" href="https://wa.me/919801050312" target="_blank">Chat on WhatsApp</a></p>
+        </div>
+        <div class="contact-card">
+          <h4 data-i18n="c_addr">📍 Address</h4>
+          <p>Tetahali, Barharia,<br>Siwan, Bihar</p>
+        </div>
+        <div class="contact-card">
+          <h4 data-i18n="c_hours">🕒 Hours</h4>
+          <p data-i18n="c_hrs_val">Mon – Sun<br>8:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section id="map">
+    <div class="container">
+      <div class="section-title">
+        <h3 data-i18n="map_title">Find Us on Map</h3>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Tetahali+Barharia+Siwan+Bihar&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location Map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong id="footerBrand">Sharma ji Carpentry Works</strong></p>
+    <p data-i18n="footer_sub">Quality woodwork in Tetahali, Barharia, Siwan</p>
+    <p>© <span id="year">2026</span> — <span data-i18n="rights">All rights reserved.</span></p>
+    <a href="#" class="admin-link" data-i18n="admin_link">🔐 Admin Panel</a>
+  </footer>
+
+</div>
+<!-- ============== END MAIN SITE ============== -->
+
+
+<!-- ============== ADMIN VIEW ============== -->
+<div class="admin-view" id="adminView">
+  <!-- Login -->
+  <div class="login-box" id="loginBox">
+    <h2>🔐 Admin Login</h2>
+    <p>Enter password to view bookings</p>
+    <form>
+      <div class="form-row" style="text-align:left">
+        <label for="adminPass">Password</label>
+        <input type="password" id="adminPass" required="" autocomplete="current-password">
+      </div>
+      <button type="submit" class="submit-btn">Login</button>
+      <p class="form-note" id="loginError" style="color:#d9534f;display:none">Wrong password. Try again.</p>
+    </form>
+    <a href="#" style="display:inline-block;margin-top:16px;font-size:.88rem;color:var(--green-700)">← Back to website</a>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="admin-box" id="adminBox" style="display:none">
+    <div class="admin-header">
+      <div>
+        <h2>📋 Bookings Dashboard</h2>
+        <p style="color:var(--muted);font-size:.9rem">Total: <strong id="count">0</strong></p>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-outline">⬇ Export</button>
+        <button class="btn btn-ghost" style="background:var(--green-700);color:#fff;border:none">Logout</button>
+      </div>
+    </div>
+    <div id="bookingList"></div>
+  </div>
+</div>
+<!-- ============== END ADMIN ============== -->
+
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+  <a class="fab wa" id="floatWA" title="WhatsApp" href="https://wa.me/919801050312">💬</a>
+  <a class="fab call" id="floatCall" title="Call" href="tel:+919801050312">📞</a>
+</div>
+
+
+
+
+
+
+</body></html>
